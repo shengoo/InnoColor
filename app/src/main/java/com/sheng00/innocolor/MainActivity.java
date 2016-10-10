@@ -14,11 +14,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         myWebView = (WebView) findViewById(R.id.webview);
-        myWebView.loadUrl("http://45.113.71.29/recipe.html");
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.setWebViewClient(new MyWebViewClient());
+//        myWebView.setWebViewClient(new MyWebViewClient());
+        myWebView.loadUrl("http://45.113.71.29/recipe.html");
     }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
