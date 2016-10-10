@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private class MyWebViewClient extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url) {
-            if (Uri.parse(url).getHost().equals("www.example.com")) {
+            if (Uri.parse(url).getHost().equals("45.113.71.29")) {
                 // This is my web site, so do not override; let my WebView load the page
                 return false;
             }
